@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    tools:context="com.example.sorphorn.mathapp.MainActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:text="Maths Function" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:layout_weight="0.50"
+        android:src="@drawable/math" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" >
+        fill_parent
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonsum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sum/Addition" />
+
+    <Button
+        android:id="@+id/buttonsub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subtraction" />
+
+    <Button
+        android:id="@+id/buttondiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Division" />
+
+    <Button
+        android:id="@+id/buttonmul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="multiplication" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>
